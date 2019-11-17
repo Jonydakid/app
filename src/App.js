@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
+import logo from './logo.png';
 import './App.css';
 
 function App() {
@@ -8,15 +8,15 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Holaaa
+          En construcción
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://www.facebook.com/lamakina.deltiempo.54"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          ¡Visita nuestro facebook!
         </a>
       </header>
     </div>
