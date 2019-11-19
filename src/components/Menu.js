@@ -32,7 +32,7 @@ class Menu extends Component {
         carta: []
     }
     componentDidMount() {
-        axios.get('https://api.myjson.com/bins/gzycm')
+        axios.get('https://api.myjson.com/bins/1bsa1i')
             .then(res => this.setState({ carta: res.data }))
     }
     render() {
