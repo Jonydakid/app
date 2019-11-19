@@ -1,14 +1,38 @@
-import React from 'react';
+import React from 'react'
 import logo from './logo.png';
+import Menu from './components/Menu';
 import './App.css';
 
-function App() {
+
+import {makeStyles} from "@material-ui/core/styles";
+
+
+const useStyles = makeStyles(theme=>({
+
+  root: {
+    marginLeft:'0',
+    marginRight:'0',
+    borderRadius: 3,
+    border: 'auto',
+    color: 'white',
+    textAlign:'center',
+    backgroundColor:'#282c34',
+    
+  },
+  label: {
+    textTransform: 'capitalize',
+  },
+}));
+
+export default function App() {
+  const stile = useStyles();
+  
   return (
-    <div className="App">
+    <div className={stile.root}>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          En construcción
+          Pagina en construcción
         </p>
         <a
           className="App-link"
@@ -16,11 +40,10 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          ¡Visita nuestro facebook!
+          ¡Visitanos en nuestro facebook por mientras!
         </a>
       </header>
+      <Menu/>
     </div>
   );
 }
-
-export default App;
