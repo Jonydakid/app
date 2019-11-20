@@ -2,9 +2,8 @@ import React from 'react'
 import logo from './logo.png';
 import Menu from './components/Menu';
 import './App.css';
-
-
 import {makeStyles} from "@material-ui/core/styles";
+import Navbar from './components/Navbar';
 
 
 const useStyles = makeStyles(theme=>({
@@ -29,6 +28,7 @@ export default function App() {
   
   return (
     <div className={stile.root}>
+      
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -43,6 +43,7 @@ export default function App() {
           ¡Visitanos en nuestro facebook por mientras!
         </a>
       </header>
+      <Navbar/>
       <Menu/>
     </div>
   );

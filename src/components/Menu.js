@@ -20,7 +20,7 @@ const useStyles = makeStyles(theme => ({
             height: '100%',
         },
         tile: {
-            
+            height:'100%',
             width: '100%'
         }
     }));
@@ -28,11 +28,15 @@ const useStyles = makeStyles(theme => ({
 
 class Menu extends Component {
 
-    state = {
-        carta: []
+    constructor(props){
+        super(props);
+        this.state={
+            carta:[],
+            
+        }
     }
     componentDidMount() {
-        axios.get('https://api.myjson.com/bins/1bsa1i')
+        axios.get('https://api.myjson.com/bins/15xvyu ')
             .then(res => this.setState({ carta: res.data }))
     }
     render() {
@@ -42,7 +46,7 @@ class Menu extends Component {
                     {this.state.carta.map(tile => (
 
                         <Grid item xs={12} sm={6} spacing={1} >
-                            <img style={{height:'100%',width:'100%'}} key={tile.id} src={tile.image} alt={tile.title} />
+                            <img className={classes} key={tile.id} src={tile.image} alt={tile.title} />
                         </Grid>
                     ))}
                 </Grid>
@@ -52,5 +56,5 @@ class Menu extends Component {
 
 Menu.propTypes = {
     classes: PropTypes.object.isRequired,
-};
+}
 export default withStyles(useStyles)(Menu)
