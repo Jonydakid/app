@@ -31,7 +31,7 @@ class Carta extends Component {
         }
     }
     componentDidMount() {
-        axios.get('https://api.myjson.com/bins/1bsa1i')
+        axios.get('https://api.myjson.com/bins/15xvyu')
             .then(res => this.setState({ carta: res.data }))
     }
     render() {
