@@ -31,13 +31,14 @@ class Carta extends Component {
         }
     }
     componentDidMount() {
-        axios.get('https://api.myjson.com/bins/15xvyu')
+        axios.get('https://api.myjson.com/bins/fg4ea')
             .then(res => this.setState({ carta: res.data }))
     }
     render() {
         const { classes } = this.props;
         return (
-            <Grid container xs={12} sm={12} classes={classes.root}>
+            
+            <Grid id="carta"  container xs={12} sm={12} classes={classes.root}>
                 {this.state.carta.map(tile => (
 
                     <Grid item xs={12} sm={6} >
