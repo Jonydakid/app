@@ -5,15 +5,16 @@ import Carta from './Carta';
 import Inicio from './Inicio';
 import Navbar from './Navbar';
 import About from './About';
-
+import Zonaentrega from './Zonaentrega'
 
 export default function Base(props) {
     
 
     return (
             <Container fixed="true"  >
-                <Navbar />  
+                
                 <Inicio/>
+                <Zonaentrega/>
                 <Carta/>
                 <About/>
             </Container>

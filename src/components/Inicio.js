@@ -8,7 +8,7 @@ export default function Inicio(props) {
     return (
         <Grid id="index" container xs={12} sm={12}>
             <Grid item xs={12} sm={12}>
-                <Typography variant="h3" color={"secondary"} >Inicio</Typography>
+                <Typography variant="h3" color={"secondary"} style={{textAlign:'center',paddingBottom:'1%',paddingTop:'1%'}}>Inicio</Typography>
             </Grid>
             <Grid item xs={12} sm={12} style={{maxWidth:'100%'}}>
                 <Typography variant="h5"  style={{width:'100%', color:'white'}} >

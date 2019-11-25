@@ -6,7 +6,7 @@ export default function About() {
     return (
         <Grid id="about" container xs={12} sm={12}>
             <Grid item xs={12} sm={12}>
-                <Typography variant="h3" color={"secondary"} >Acerca de nosotros</Typography>
+                <Typography variant="h3" color={"secondary"} style={{textAlign:'center',paddingBottom:'1%',paddingTop:'1%'}} >Acerca de nosotros</Typography>
             </Grid>
             <Grid item xs={12} sm={6} style={{maxWidth:'100%'}}>
                 <Typography variant="h5"  style={{width:'100%', color:'white'}} >

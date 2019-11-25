@@ -64,7 +64,7 @@ class Slideshow extends Component {
     startCarousel = () => {
         this.carouselInterval = setInterval(() => {
             this.transitionSlides();
-        }, 4000);
+        }, 6000);
     };
 
     setSlideState = (slide1, slide2, currentId) => {

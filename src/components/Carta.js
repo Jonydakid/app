@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardMedia from '@material-ui/core/CardMedia';
-
+import Typography from '@material-ui/core/Typography';
 var style = makeStyles(theme => ({
     root: {
         flexGrow: 1,
@@ -39,6 +39,9 @@ class Carta extends Component {
         return (
             
             <Grid id="carta"  container xs={12} sm={12} classes={classes.root}>
+                <Grid item xs={12} sm={12}>
+                <Typography variant="h3" color={"secondary"} style={{textAlign:'center',paddingBottom:'1%',paddingTop:'1%'}}>Carta</Typography>
+                </Grid>
                 {this.state.carta.map(tile => (
 
                     <Grid item xs={12} sm={6} >

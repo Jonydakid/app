@@ -2,6 +2,8 @@ import React from 'react'
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 import Base from './components/Base';
 import Carrusel from './components/Carrusel';
+import Footer from './components/Footer';
+import Navbar from './components/Navbar';
 
 
 
@@ -16,10 +18,14 @@ export default function App() {
 
   return (
     <div style={{backgroundColor:'#282c34'}}>
-      
-      <Carrusel/>
       <ThemeProvider theme={theme}>
+      <Navbar />  
+      <Carrusel/>
+
+      
+        
         <Base/>
+        <Footer/>
       </ThemeProvider>
       
     </div>

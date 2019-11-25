@@ -12,6 +12,7 @@ import Typography from '@material-ui/core/Typography';
 import wsp from './imgs/whatsapp.png';
 import fb from './imgs/fb.png';
 import { HashLink as Link } from 'react-router-hash-link';
+import { positions } from '@material-ui/system';
 function HideOnScroll(props) {
   const { children, window } = props;
   // Note that you normally won't need to set the window ref as useScrollTrigger
@@ -31,19 +32,26 @@ HideOnScroll.propTypes = {
 };
 
 export default function Navbar(props) {
+
   const theme = useTheme();
+  
   return (
     <React.Fragment>
       <HideOnScroll {...props}>
-        <AppBar style={{ backgroundColor: '#00000d', color: '#ffffff' }} >
+        <AppBar position="sticky" style={{ backgroundColor: '#00000d', color: '#ffffff' }}>
           <Toolbar >
             <img src={logo} style={{ maxWidth: '7%' }} alt="logo" />
             <Spacer w={'5%'} />
             <Link smooth to="#index" style={{textDecoration:'none'}}><Button href="#about" style={{minWidth:'10%'}} color={"secondary"}><Typography variant="h6" style={{fontSize:'1rem'}} >Inicio</Typography></Button></Link>
             <Spacer w={'5%'} />
+            <Link smooth to="#reparto" style={{textDecoration:'none'}}><Button href="#about" style={{minWidth:'10%'}} color={"secondary"}><Typography variant="h6" style={{fontSize:'1rem'}} >Reparto</Typography></Button></Link>
+            
+            <Spacer w={'5%'} />
             <Link smooth to="#carta" style={{textDecoration:'none'}}><Button href="#about" style={{minWidth:'10%'}} color={"secondary"}><Typography variant="h6" style={{fontSize:'1rem'}} >Carta</Typography></Button></Link>
             
             <Spacer w={'5%'} />
+
+            
             
             <Link smooth to="#about" style={{textDecoration:'none'}}><Button href="#about" style={{minWidth:'max-content'}} color={"secondary"}><Typography variant="h6" style={{fontSize:'1rem'}} >Acerca de nosotros</Typography></Button></Link>
 
@@ -54,15 +62,15 @@ export default function Navbar(props) {
 
             <Spacer w={'5%'} />
             
-            <Button color={"secondary"} href="https://www.facebook.com/lamakina.deltiempo.54">
-            <img src={fb} style={{ width: '13%' }} alt="fb" />
-            <Typography variant="h6"  >¡Vísitanos en nuestra página!</Typography>
+            <Button color={"secondary"} href="https://www.facebook.com/Delivery-La-Makina-del-Tiempo-114250776656668/">
+            <img src={fb} style={{ width: '23%' }} alt="fb" />
+            <Typography variant="h6"  >¡Visítanos!</Typography>
             </Button>
               
           </Toolbar>
         </AppBar>
       </HideOnScroll>
-
+      
     </React.Fragment>
   );
 }
