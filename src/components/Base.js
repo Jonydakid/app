@@ -6,13 +6,14 @@ import Inicio from './Inicio';
 import Navbar from './Navbar';
 import About from './About';
 import Zonaentrega from './Zonaentrega'
-
+import Carrusel from './Carrusel'
 export default function Base(props) {
     
 
     return (
             <Container fixed="true"  >
-                
+                 
+                <Carrusel/>
                 <Inicio/>
                 <Zonaentrega/>
                 <Carta/>

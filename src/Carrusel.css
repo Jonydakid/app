@@ -7,7 +7,7 @@
 
 /*====== WIDTH ======*/
 .screenW {
-    width: 100vw;
+    width: 100%;
 }
 .fullW {
     width: 100%;
@@ -62,10 +62,10 @@
     left: 0px;
 }
 .left100vw {
-    left: 100vw;
+    left: 100%;
 }
 .leftM100vw {
-    left: -100vw;
+    left: -100%;
 }
 .bot0 {
     bottom: 0;

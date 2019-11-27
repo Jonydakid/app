@@ -19,10 +19,7 @@ export default function App() {
   return (
     <div style={{backgroundColor:'#282c34'}}>
       <ThemeProvider theme={theme}>
-      <Navbar />  
-      <Carrusel/>
-
-      
+      <Navbar />     
         
         <Base/>
         <Footer/>

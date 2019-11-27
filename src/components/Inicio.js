@@ -11,7 +11,7 @@ export default function Inicio(props) {
                 <Typography variant="h3" color={"secondary"} style={{textAlign:'center',paddingBottom:'1%',paddingTop:'1%'}}>Inicio</Typography>
             </Grid>
             <Grid item xs={12} sm={12} style={{maxWidth:'100%'}}>
-                <Typography variant="h5"  style={{width:'100%', color:'white'}} >
+                <Typography variant="h6"  style={{width:'100%', color:'white'}} >
 
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer hendrerit dictum interdum. Proin ipsum lacus, lobortis iaculis blandit et, interdum vel mi. Aliquam pharetra rhoncus quam, sit amet vulputate eros luctus id. Ut a vulputate lacus, a congue tellus. Sed enim sem, interdum a euismod vitae, ultricies at elit. Aenean in pulvinar nulla, ac laoreet ante. Nunc sagittis sodales odio, quis ultricies augue dapibus nec.
                     
