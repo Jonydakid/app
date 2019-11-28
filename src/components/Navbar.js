@@ -43,8 +43,8 @@ export default function Navbar(props) {
             <Toolbar >
               <img src={logo} style={{ maxWidth: '7%' }} alt="logo" />
               <Spacer w={'5%'} />
-              <Link smooth to="#index" style={{ textDecoration: 'none' }}><Button style={{ minWidth: '10%' }} color={"secondary"}><Typography variant="h6" style={{ fontSize: '1rem' }} >Inicio</Typography></Button></Link>
-              <Spacer w={'5%'} />
+              {/*<Link smooth to="#index" style={{ textDecoration: 'none' }}><Button style={{ minWidth: '10%' }} color={"secondary"}><Typography variant="h6" style={{ fontSize: '1rem' }} >Inicio</Typography></Button></Link>
+              <Spacer w={'5%'} />*/}
               <Link smooth to="#reparto" style={{ textDecoration: 'none' }}><Button style={{ minWidth: '10%' }} color={"secondary"}><Typography variant="h6" style={{ fontSize: '1rem' }} >Reparto</Typography></Button></Link>
 
               <Spacer w={'5%'} />
@@ -53,9 +53,11 @@ export default function Navbar(props) {
               <Spacer w={'5%'} />
 
 
-
+              {/*
               <Link smooth to="#about" style={{ textDecoration: 'none' }}><Button href="#about" style={{ minWidth: 'max-content' }} color={"secondary"}><Typography variant="h6" style={{ fontSize: '1rem' }} >Acerca de nosotros</Typography></Button></Link>
 
+              */}
+              
               <Spacer w={'15%'} />
               <img src={wsp} style={{ width: '5%' }} alt="wsp" />
 
@@ -65,12 +67,12 @@ export default function Navbar(props) {
 
               <div style={{ display: 'block' }}>
                 <Button color={"secondary"} href="https://www.facebook.com/Delivery-La-Makina-del-Tiempo-114250776656668/">
-                  <img src={fb} style={{ width: '23%' }} alt="fb" />
+                  <img src={fb} style={{ width: '15%' }} alt="fb" />
                   <Typography variant="h6"  >¡Visítanos!</Typography>
                 </Button>
                 <div style={{ display: 'flex', textAlign: 'center' }}>
-                  <Spacer w={'15%'} />
-                  <img src={inst} style={{ width: '10%' }} alt="inst" />
+                  <Spacer w={'25%'} />
+                  <img src={inst} style={{ width: '7%' }} alt="inst" />
                   <Typography variant="h6" color={"secondary"}>@deliverylamakinadeltiempo</Typography>
 
                 </div>
