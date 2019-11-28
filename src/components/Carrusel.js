@@ -21,7 +21,7 @@ const s = {
 //===========================================
 // SLIDES DATA
 //===========================================
-const slides = [slide1, slide2, slide3];
+const slides = [slide1, slide2];
 
 //===========================================
 // CARRUSEL COMPONENT

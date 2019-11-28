@@ -14,10 +14,8 @@ export default function Base(props) {
             <Container fixed="true"  >
                  
                 <Carrusel/>
-                <Inicio/>
                 <Zonaentrega/>
                 <Carta/>
-                <About/>
             </Container>
     )
 }
