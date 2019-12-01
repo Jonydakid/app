@@ -11,11 +11,11 @@ export default function Base(props) {
     
 
     return (
-            <Container fixed="true"  >
+            <Container fixed={true} alignContent='center'  >
                  
                 <Carrusel/>
                 <Zonaentrega/>
-                <Carta/>
+                <Carta />
             </Container>
     )
 }

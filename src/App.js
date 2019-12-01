@@ -9,6 +9,7 @@ import Navbar from './components/Navbar';
 
 export default function App() {
   
+  
   const theme = createMuiTheme(({
     palette: {
         primary: { main: "#282c34", light: "#50555e", dark: "#00000d", contrastText: "#ffffff" },
@@ -21,7 +22,7 @@ export default function App() {
       <ThemeProvider theme={theme}>
       <Navbar />     
         
-        <Base/>
+        <Base />
         <Footer/>
       </ThemeProvider>
       

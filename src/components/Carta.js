@@ -7,18 +7,20 @@ import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
-var style = makeStyles(theme => ({
+var style = makeStyles(({
     root: {
         flexGrow: 1,
+
     },
     card: {
         padding: '8px'
     },
     media: {
-        maxHeight:'100%',
-        maxWidth:'100%'
+        maxHeight: '100%',
+        maxWidth: '100%'
     },
 }))
+
 
 
 class Carta extends Component {
@@ -31,31 +33,37 @@ class Carta extends Component {
         }
     }
     componentDidMount() {
-        axios.get('https://api.myjson.com/bins/fg4ea')
+        axios.get('https://api.myjson.com/bins/1bx8qu')
             .then(res => this.setState({ carta: res.data }))
+
+            
     }
+    
     render() {
         const { classes } = this.props;
         return (
-            
-            <Grid id="carta"  container xs={12} sm={12} classes={classes.root}>
+
+            <Grid id="carta" container xs={12} sm={12} style={{textAlign: '-webkit-center'}}>
                 <Grid item xs={12} sm={12}>
-                <Typography variant="h3" color={"secondary"} style={{textAlign:'center',paddingBottom:'1%',paddingTop:'1%'}}>Carta</Typography>
+                    <Typography variant="h3" color={"secondary"} style={{width:'100%', justifyContent: 'center', paddingBottom: '1%', paddingTop: '1%' }}>Carta</Typography>
                 </Grid>
                 {this.state.carta.map(tile => (
 
-                    <Grid item xs={12} sm={6} >
-                        <Card className={classes.card} style={{margin :'8px'}}>
-                            <CardActionArea>
+
+                    <Grid   id={'id-'+tile.title} item xs={12} sm={12}   >
+
+                        <Card className={classes.card} style={{ width: '90%', backgroundColor: '#282c34' }}>
+                            <Typography variant="h4" color={"secondary"} style={{  paddingBottom: '2%', paddingTop: '3%', fontSize: '25px' }}>{tile.title}</Typography>
+                            <CardActionArea style={{backgroundColor: '#282c34'}} >
                                 <CardMedia
                                     component='img'
-                                    className={classes.media}
+                                    style={{ paddingBottom: '10px',borderRadius:'5%' }}
                                     image={tile.image}
                                     title={tile.title}
                                 />
                             </CardActionArea>
                         </Card>
-                        
+
                     </Grid>
                 ))}
             </Grid>
